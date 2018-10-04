@@ -1,0 +1,34 @@
+html, body, #root{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+.App {
+  background-color: #ffcc00;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App-title {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bold;
+}
+.login-container {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 6%;
+  margin: 0;
+
+}
