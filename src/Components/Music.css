@@ -1,0 +1,85 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100,300,400,700";
+@import "";
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+
+.Music {
+  overflow: hidden;
+  width: auto;
+  height: auto;
+}
+.Music .Artwork {
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.Music .Artwork:hover .Controls {
+  background: rgba(41, 23, 32, 0.8);
+}
+.Music .Artwork .Controls {
+
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 280px;
+  background: rgba(41, 23, 32, 0.3);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background .125s ease;
+  transition: background .125s ease;
+}
+.Music .Artwork .Controls i:hover{
+	cursor:pointer;
+}
+.Music .Artwork .Controls .fa-play,
+.Music .Artwork .Controls .fa-pause {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+.Music .TrackList {
+  width: auto;
+  height: auto;
+  background: #4a293a;
+  overflow-y: auto;
+  position:relative;
+  color: white;
+  padding: 0;
+}
+.Music .TrackList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.Music .TrackList li:hover, .Music .TrackList li.selected {
+  background: #39202d;
+  cursor: pointer;
+  color: #D90368;
+}
+.Music .TrackList li:hover .duration {
+  opacity: 1;
+  color: white
+}
+.Music .TrackList li .title {
+  margin-left: 10px;
+  font-weight: 500;
+  letter-spacing: .12em;
+}
+.Music .TrackList li .duration {
+  margin-left: auto;
+  opacity: 0.75;
+  color: white;
+}

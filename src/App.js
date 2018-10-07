@@ -10,13 +10,14 @@ class App extends Component {
           <h1 className="App-title">XEJC</h1>
           <div>
             <form>
-              <div class="form-group">
-                <label for="formGroupExampleInput2">Digite seu login</label>
-                <input type="text" class="form-control" id="login" placeholder="Login"/>
+              <div className="form-group">
+                <input type="text" className="form-control" id="login" placeholder="Login"/>
               </div>
-              <div class="form-group">
-                <label for="formGroupExampleInput">Digite sua senha</label>
-                <input type="text" class="form-control" id="senha" placeholder="Senha"/>
+              <div className="form-group">
+                <input type="text" className="form-control" id="senha" placeholder="Senha"/>
+              </div>
+              <div className="button">
+                <button type="submit" className="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
